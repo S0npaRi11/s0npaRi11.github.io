@@ -29,18 +29,57 @@ body{
     background: transparent;
     font-size: 20px;
     font-family: 'Oxygen';
+    color: #252B31;
 }
 
 #hamburger-menu{
     width: 200px;
     height: 100vh;
-    background: black;
+    background:#252B31;
+    color: #FFFCF9;
     position: absolute;
     z-index: 3;
     top: 0;
     left: 0;
-    display: none; /* manipulate this to open and close the menu */
+    animation: open 0.2s;
+    box-shadow: 0px 0px 8px 1px #252B31a3;
 }
+
+#hamburger-menu ul{
+    margin-top: 50px;
+}
+
+#hamburger-menu ul li{
+    text-decoration: none;
+    padding:10px 20px;
+}
+
+#hamburger-menu ul li a{
+    text-decoration: none;
+    color: #FFFCF9;
+    font-size: 22px;
+    transition: ease-in-out 0.2s;
+}
+
+#hamburger-menu ul li a:hover{
+    text-decoration: underline;
+    padding-left: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+#ham-close{
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #FFFCF9;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+}
+
+/* .ham-hidden{
+    width: 0;
+} */
 
 .font-regular{
     font-family: 'Oxygen';
@@ -132,12 +171,12 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .project-card:hover{
     box-shadow: 0px 0px 16px 1px #252B314a;
-    transition:ease-in-out 0.5s;
+    transition:ease-in-out 0.2s;
 }
 
 .project-card > * {
@@ -157,6 +196,56 @@ h2{
 
 .contact-heading{
     font-size: 35px;
+}
+
+.contact .content-wrapper a{
+    text-decoration: none;
+    margin: 0px 10px 0px 0px;
+    line-height: 25px;
+    font-size: 17px;
+    color: #FFFCF9;
+    transition: 0.2s;
+}
+
+.contact .content-wrapper a:hover{
+    color: #252B31;
+    transition: ease-in-out 0.2s;
+}
+
+.projects a{
+    text-decoration: none;
+    color: #FFFCF9;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.projects a:hover{
+    color: #252B31;
+    transition: ease-in-out 0.2s;
+}
+
+.project-card-links a{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #252B31;
+    transition: 0.2s;
+}
+
+.project-card-links a:hover{
+    color: #06D6A0;
+    transition: ease-in-out 0.2s;
+}
+
+.intro a{
+    text-decoration: none;
+    color: #252B31;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.intro a:hover{
+    color: #8B95C9;
+    transition: ease-in-out 0.2s;
 }
 
 .contacts{
@@ -232,6 +321,8 @@ h2{
         height: auto;
         background: #06D6A0;
     }
+
+   
     
     .contact{
         grid-area: "contact";
@@ -242,6 +333,31 @@ h2{
         width: auto;
         height: auto;
         background: #8B95C9;
+    }
+
+    .contact .content-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Animations */
+
+@keyframes open{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width:200px;
+    }
+}
+
+@keyframes close{
+    0%{
+        width: 200px
+    }
+    100%{
+        width: 0px
     }
 }
 

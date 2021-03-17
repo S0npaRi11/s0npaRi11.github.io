@@ -1,22 +1,27 @@
-const ProjectPreview = () => {
+import { Link } from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa'
+
+import Projectcard from './ProjectCard'
+
+const ProjectPreview = ({ repos }) => {
+
+    console.log(repos)
+
+    const preview = [repos[0], repos[1]]
+
+    console.log(preview)
+
     return (
         <>
             <div className="projects">
                 <div className="content-wrapper">
                     <h1 className="color-light font-bold">  Projects </h1>
                     <div className="porject-grid">
-                        <div className="project-card">
-                            <h3 className="project-card-heading"> Project 1 </h3>
-                            <p className="project-card-details"> Details about Project 1 in short. </p>
-                            <div className="project-card-links"> Project related links here (github link, etc) </div>
-                        </div>
-                        <div className="project-card">
-                            <h3 className="project-card-heading"> Project 2 </h3>
-                            <p className="project-card-details"> Details about Project 1 in short. </p>
-                            <div className="project-card-links"> Project related links here (github link, etc) </div>
-                        </div>
+                        {preview.map(r => (
+                            <Projectcard key={r.id}  r={ r }/>
+                        ))}
 
-                        <a href="#"> view all </a>
+                        <Link to="/projects"> view all  <FaArrowRight /></Link>
                     </div>
                 </div>
             </div>

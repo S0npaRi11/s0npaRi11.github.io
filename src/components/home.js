@@ -3,7 +3,7 @@ import Intro from './partials/Intro'
 import ProjectPreview from './partials/ProjectPreview'
 import Contacts from './partials/Contacts'
 
-const home = () => {
+const home = ({ repos }) => {
     return (
         <>
             <div className="container">
@@ -15,7 +15,7 @@ const home = () => {
                 <Intro />
 
                 { /* Project preview */ }
-                <ProjectPreview />
+                <ProjectPreview  repos ={ repos }/>
 
                 { /* Contacts here */ }
                 <Contacts />

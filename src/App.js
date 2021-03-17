@@ -1,3 +1,6 @@
+import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import './App.css';
 
 import Home from './components/home'
@@ -7,17 +10,49 @@ import Projects from './components/projects'
 // Route all the pages here
 
 function App() {
+
+  const [repos, setRepos] = useState([])
+
+  const getRepos = async () => {
+
+    const URL = 'https://api.github.com/users/s0npaRi11/repos'
+
+    const data = await fetch(URL)
+
+    return data.json()
+
+  }
+
+  useEffect(() => {
+    
+    const fetchRepos = async () => {
+      const r = await getRepos()
+      console.log(r)
+      setRepos(r)
+    }
+    
+    fetchRepos()
+  }, [])
+
+
   return (
     <div className="App">
 
-      {/* home */}
-      {/* <Home /> */}
+      <Router>
 
-      {/* About */}
-      {/* <About /> */}
+        <Route exact path="/about">
+          <About />
+        </Route>
 
-      {/* Projects */}
-      <Projects />
+        <Route exact path="/projects">
+          <Projects repos={ repos } />
+        </Route>
+
+        <Route exact path="/">
+          <Home repos = { repos }/>
+        </Route>
+
+      </Router>
       
     </div>
   );
@@ -26,8 +61,6 @@ function App() {
 export default App;
 
 // TODO
-  /**
-   * Route all the components
+  /*
    * Get projects dynamically from github
-   * Add icons
    */
