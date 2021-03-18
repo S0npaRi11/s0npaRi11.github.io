@@ -4,6 +4,7 @@ import ProjectPreview from './partials/ProjectPreview'
 import Contacts from './partials/Contacts'
 
 const home = ({ repos }) => {
+
     return (
         <>
             <div className="container">

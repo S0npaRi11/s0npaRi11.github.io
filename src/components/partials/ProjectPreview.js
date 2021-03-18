@@ -5,11 +5,7 @@ import Projectcard from './ProjectCard'
 
 const ProjectPreview = ({ repos }) => {
 
-    console.log(repos)
-
     const preview = [repos[0], repos[1]]
-
-    console.log(preview)
 
     return (
         <>
@@ -17,7 +13,7 @@ const ProjectPreview = ({ repos }) => {
                 <div className="content-wrapper">
                     <h1 className="color-light font-bold">  Projects </h1>
                     <div className="porject-grid">
-                        {preview.map(r => (
+                        {preview[0] !== undefined && preview[1] !== undefined && preview.map(r => (
                             <Projectcard key={r.id}  r={ r }/>
                         ))}
 

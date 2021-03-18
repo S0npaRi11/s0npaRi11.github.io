@@ -1,8 +1,9 @@
 import Hamburger from './partials/Hamburger'
+import ProjectGrid from './partials/ProjectGrid'
 
-const projects = () => {
+const projects = ({ repos }) => {
     return (
-        <>
+        <div className="">
             <Hamburger />
             
             <div className="header">
@@ -11,10 +12,10 @@ const projects = () => {
 
             <div className="content">
                 <div className="content-wrapper">
-                    All github projects here
+                    <ProjectGrid  repos = {repos}/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

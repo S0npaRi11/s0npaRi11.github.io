@@ -27,7 +27,6 @@ function App() {
     
     const fetchRepos = async () => {
       const r = await getRepos()
-      console.log(r)
       setRepos(r)
     }
     
@@ -61,6 +60,9 @@ function App() {
 export default App;
 
 // TODO
-  /*
-   * Get projects dynamically from github
+  /* 
+   * Add descriptions to all the repos
+   * Write down the static content for About Me section
+   * On home, only display the repos that are recently updated
+   * On projects, sort the repos based on update time
    */
