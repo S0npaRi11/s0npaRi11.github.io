@@ -2,6 +2,11 @@ import Hamburger from './partials/Hamburger'
 import ProjectGrid from './partials/ProjectGrid'
 
 const projects = ({ repos }) => {
+
+    console.log(repos)
+
+    // const d = repos
+
     return (
         <div className="">
             <Hamburger />
