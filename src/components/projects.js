@@ -3,7 +3,7 @@ import ProjectGrid from './partials/ProjectGrid'
 
 const projects = ({ repos }) => {
 
-    console.log(repos)
+    // console.log(repos)
 
     // const d = repos
 
