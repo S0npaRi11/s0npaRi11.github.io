@@ -5,7 +5,7 @@ const projects = ({ repos }) => {
 
     // console.log(repos)
 
-    // const d = repos
+    // const d = repos[0]
 
     return (
         <div className="">

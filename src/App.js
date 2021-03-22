@@ -27,6 +27,7 @@ function App() {
     
     const fetchRepos = async () => {
       const r = await getRepos()
+      console.log(r)
       setRepos(r)
     }
     
