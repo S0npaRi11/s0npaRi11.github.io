@@ -264,7 +264,7 @@ h2{
 }
 
 .contact .content-wrapper{
-    padding: 45px 50px 0;;
+    padding: 45px 50px;
 }
 
 .contacts svg{
@@ -333,6 +333,31 @@ h2{
     height: 100px;
     padding-left: 50px;
 
+}
+
+.about-me-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'image' 'info';
+}
+
+
+.about-me-info{
+    grid-area: info;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.about-me-info a{
+    color: #252B31;
+}
+
+.image{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -419,6 +444,27 @@ h2{
     .contact .content-wrapper{
         display: flex;
         justify-content: space-between;
+    }
+
+    .about-me-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'info image' ;
+    }
+    
+    .about-me-info{
+        line-height: 2em;
+    }
+    
+    .about-me-info a{
+        color: #252B31;
+    }
+    
+    .image{
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
     }
 }
 
