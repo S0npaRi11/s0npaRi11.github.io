@@ -261,6 +261,15 @@ h2{
 
 .contacts{
     padding: 20px 0;
+}
+
+.contact .content-wrapper{
+    padding: 45px 50px 0;;
+}
+
+.contacts svg{
+    /* padding: 20px 0; */
+    font-size: 25px;
 
 }
 
@@ -291,6 +300,39 @@ h2{
 
 .project-card-lang{
     font-size: 15px;
+}
+
+.watermark{
+    margin: 15px 0;
+    display: block;
+    font-size: 12px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:  400;
+    color: #FFFCF9;
+    /* line-height: 0; */
+} 
+
+.error-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFFCF9;
+}
+
+.error-container{
+    position: absolute;
+    top: 20%;
+    /* background: #FFFCF9; */
+    color: #252B31;
+}
+
+.error-name{
+    display: block;
+    font-size: 180px;
+    color: #8B95C9;
+    height: 100px;
+    padding-left: 50px;
+
 }
 
 

@@ -1,4 +1,5 @@
 import Hamburger from './partials/Hamburger'
+import Contact from './partials/Contacts'
 
 const about = () => {
     return (
@@ -13,6 +14,8 @@ const about = () => {
                     Some Info About Me
                 </div>
             </div>
+
+            <Contact />
         </>
     )
 }

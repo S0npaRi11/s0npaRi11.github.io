@@ -13,7 +13,8 @@ const ProjectPreview = ({ repos }) => {
                 <div className="content-wrapper">
                     <h1 className="color-light font-bold">  Projects </h1>
                     <div className="porject-grid">
-                        {preview[0] !== undefined && preview[1] !== undefined && preview.map(r => (
+                        {/* { repos.length === 0 && <Redirect to="/500"/> } */}
+                        {(preview[0] !== undefined && preview[1] !== undefined) && preview.map(r => (
                             <Projectcard key={r.id}  r={ r }/>
                         ))}
 
