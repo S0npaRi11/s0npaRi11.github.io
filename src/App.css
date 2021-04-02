@@ -303,13 +303,14 @@ h2{
 }
 
 .watermark{
-    margin: 15px 0;
+    /* margin: 15px 0; */
     display: block;
     font-size: 12px;
     font-family:'Courier New', Courier, monospace;
     font-weight:  400;
     color: #FFFCF9;
-    /* line-height: 0; */
+    padding: 0 50px;
+    line-height: 2.5em;
 } 
 
 .error-wrapper{

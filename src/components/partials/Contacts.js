@@ -22,6 +22,7 @@ const Contacts = () => {
                         {/* </div> */}
                     </div>
                 </div>
+                <div className="watermark"> Designed By : Parag Mahale </div>
             </div>
         </>
     )
