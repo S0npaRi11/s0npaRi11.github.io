@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Intro = () => {
     return (
@@ -7,7 +8,7 @@ const Intro = () => {
                 <div className="content-wrapper">
                     <h1 className="color-dark font-bold"> Hi, I am <br /><span className="underline">  Parag Mahale. </span> </h1>
                     <h2 className="color-dark font-regular"> A <span className="underline"> web designer </span> and <span className="underline"> developer. </span> </h2>
-                    <Link to="/about"> More about me </Link>
+                    <Link to="/about"> More about me <FaArrowRight /> </Link>
                 </div>
             </div>
         </>

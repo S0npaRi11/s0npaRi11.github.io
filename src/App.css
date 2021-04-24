@@ -30,6 +30,13 @@ body{
     font-size: 20px;
     font-family: 'Oxygen';
     color: #252B31;
+    transition: 0.2s;
+}
+
+#hamburger-button:hover{
+    cursor: pointer;
+    color: #8B95C9;
+    transition: ease-in-out 0.2s;
 }
 
 #hamburger-menu{
@@ -51,7 +58,13 @@ body{
 
 #hamburger-menu ul li{
     text-decoration: none;
-    padding:10px 20px;
+    padding:15px 5px;
+}
+
+#hamburger-menu ul li svg{
+    font-size: 25px;
+    padding: 0px 10px;
+    color: #FFFCF9;
 }
 
 #hamburger-menu ul li a{
@@ -75,15 +88,15 @@ body{
     font-size: 26px;
     width: 50px;
     height: 50px;
+    transition: 0.2s;
 }
 
-/* .ham-hidden{
-    width: 0;
-} */
+#ham-close:hover{
+    cursor: pointer;
+}
 
 .font-regular{
     font-family: 'Oxygen';
-    /* font-weight: 800; */
 }
 
 .font-bold{
@@ -111,7 +124,6 @@ body{
     background-color: #FFFCF9;
     width: 100%;
     height: auto;
-    /* background-image: url(./pictures/portfolio-website-logo.png); */
 }
 
 .header{
@@ -230,9 +242,18 @@ h2{
     transition: 0.2s;
 }
 
+.projects a svg{
+    transition: 0.3s;
+}
+
 .projects a:hover{
     color: #252B31;
     transition: ease-in-out 0.2s;
+}
+
+.projects a:hover svg{
+    padding-left: 10px;
+    transition: ease-in-out 0.3s;
 }
 
 .project-card-links a{
@@ -254,9 +275,18 @@ h2{
     transition: 0.2s;
 }
 
+.intro a svg{
+    transition: 0.3s;
+}
+
 .intro a:hover{
     color: #8B95C9;
     transition: ease-in-out 0.2s;
+}
+
+.intro a:hover svg{
+    padding-left: 10px;
+    transition: ease-in-out 0.3s;
 }
 
 .contacts{
@@ -268,7 +298,6 @@ h2{
 }
 
 .contacts svg{
-    /* padding: 20px 0; */
     font-size: 25px;
 
 }
@@ -281,21 +310,14 @@ h2{
     color: #FFFCF9
 }
 
-/* .project-grid .project-card{
-    border-left-style: solid;
-    border-left-color: #8B95C9;
-    /* box-shadow:  0px 0px 4px 1px #252B31a3; */
-/* } */ 
-
 .project-card{
     border-left-style: solid;
     border-left-color: #8B95C9;
-    /* box-shadow:  0px 0px 4px 1px #252B31a3; */
 }
 
 .project-card-details{
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
 }
 
 .project-card-lang{
@@ -303,7 +325,6 @@ h2{
 }
 
 .watermark{
-    /* margin: 15px 0; */
     display: block;
     font-size: 12px;
     font-family:'Courier New', Courier, monospace;
@@ -323,7 +344,6 @@ h2{
 .error-container{
     position: absolute;
     top: 20%;
-    /* background: #FFFCF9; */
     color: #252B31;
 }
 
@@ -382,7 +402,6 @@ h2{
         width: auto;
         height: auto;
         background-color: #FFFCF9;
-        /* background-image: url(./pictures/portfolio-website-logo.png); */
     }
     
     .header{
@@ -402,12 +421,10 @@ h2{
         grid-column-start: 1;
         grid-column-end: -1;
         grid-row-start: 2;
-        /* min-height: 65vh; */
         width: 100%;
         background: #FFFCF9;
         color: #252B31;
         font-size: 20px;
-        /* padding: 0 5%; */
         
     }
 
