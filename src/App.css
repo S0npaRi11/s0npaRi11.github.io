@@ -19,6 +19,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 #hamburger-button{
@@ -187,23 +188,74 @@ body{
     gap: 25px;
 }
 
-.project-card{
-    background-color: #FFFCF9;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: 0.2s;
+.card{
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
     border-left-style: solid;
     border-left-color: #8B95C9;
 }
 
-.project-card:hover{
+.card-image{
+    width: 100%;
+    height: 192px;
+    display: block;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info{
+    background: #FFFCF9;
+    transition: ease-in-out 0.3s;
+    bottom: 0;
+    height: 240px;
+}
+
+.card:hover .card-info{
+    transform: translateY(-192px)
+}
+
+.card:hover{
     box-shadow: 0px 0px 16px 1px #252B314a;
     transition:ease-in-out 0.2s;
 }
 
-.project-card > * {
-    padding: 10px 15px;
+.card-heading{
+    min-height: 30px;
+    text-transform: uppercase;
+    padding: 7px 15px;
+   font-size: 13px;
+}
+
+.card-text{
+    padding: 7px 15px;
+    max-height: 145px;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+.card-footer{
+    padding: 7px 15px;
+    height: 25px;
+}
+
+.card-link{
+    margin-right:10px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #252B31;
+    transition: 0.2s;
+}
+
+.card-link:hover{
+    color: #06D6A0;
+    transition: ease-in-out 0.2s;
 }
 
 h1{
@@ -256,18 +308,6 @@ h2{
     transition: ease-in-out 0.3s;
 }
 
-.project-card-links a{
-    margin-right: 10px;
-    font-size: 18px;
-    color: #252B31;
-    transition: 0.2s;
-}
-
-.project-card-links a:hover{
-    color: #06D6A0;
-    transition: ease-in-out 0.2s;
-}
-
 .intro a{
     text-decoration: none;
     color: #252B31;
@@ -308,20 +348,6 @@ h2{
 
 .color-light{
     color: #FFFCF9
-}
-
-.project-card{
-    border-left-style: solid;
-    border-left-color: #8B95C9;
-}
-
-.project-card-details{
-    font-size: 18px;
-    text-align: left;
-}
-
-.project-card-lang{
-    font-size: 15px;
 }
 
 .watermark{
@@ -441,7 +467,7 @@ h2{
 
     .project-grid{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fill, minmax(240px, auto));
         column-gap: 20px;
         row-gap: 35px;
         width: 100%;
@@ -506,3 +532,11 @@ h2{
     }
 }
 
+/* Parallax related styles */
+.parallax-wrapper{
+    overflow-y: hidden;
+}
+
+.parallax{
+    transition: ease-in 0.05s;
+}

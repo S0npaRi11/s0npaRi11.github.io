@@ -9,9 +9,11 @@ const projects = ({ repos }) => {
             <div className="">
                 <Hamburger />
                 
-                <div className="header">
-                    <h1> Projects </h1>
-                </div>
+               <div className="parallax-wrapper">
+                    <div className="header parallax">
+                        <h1> Projects </h1>
+                    </div>
+               </div>
 
                 <div className="content">
                     <div className="content-wrapper">
