@@ -16,7 +16,6 @@ const parallax = () => {
     const coords = ( scrolled * 0.7 ) + 'px'
     
     parallax.style.transform = `translateY(${coords})`
-    // parallax.style.filter = `blur(${coords})`
    }
 }
 
