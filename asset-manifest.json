@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8c8c967.chunk.css",
-    "main.js": "/static/js/main.97f8da82.chunk.js",
-    "main.js.map": "/static/js/main.97f8da82.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.852b7b26.js",
-    "runtime-main.js.map": "/static/js/runtime-main.852b7b26.js.map",
-    "static/js/2.79c279f8.chunk.js": "/static/js/2.79c279f8.chunk.js",
-    "static/js/2.79c279f8.chunk.js.map": "/static/js/2.79c279f8.chunk.js.map",
-    "static/js/3.1122ae92.chunk.js": "/static/js/3.1122ae92.chunk.js",
-    "static/js/3.1122ae92.chunk.js.map": "/static/js/3.1122ae92.chunk.js.map",
+    "main.css": "/static/css/main.a1ce3ac5.chunk.css",
+    "main.js": "/static/js/main.ebc4db2a.chunk.js",
+    "main.js.map": "/static/js/main.ebc4db2a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ecdd26a4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ecdd26a4.js.map",
+    "static/js/2.962a93dd.chunk.js": "/static/js/2.962a93dd.chunk.js",
+    "static/js/2.962a93dd.chunk.js.map": "/static/js/2.962a93dd.chunk.js.map",
+    "static/js/3.8b4bdd7a.chunk.js": "/static/js/3.8b4bdd7a.chunk.js",
+    "static/js/3.8b4bdd7a.chunk.js.map": "/static/js/3.8b4bdd7a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c8c8c967.chunk.css.map": "/static/css/main.c8c8c967.chunk.css.map",
-    "static/js/2.79c279f8.chunk.js.LICENSE.txt": "/static/js/2.79c279f8.chunk.js.LICENSE.txt",
-    "static/media/card-image.c1ff3f4e.png": "/static/media/card-image.c1ff3f4e.png",
-    "static/media/parag-mahale.ff329c93.jpg": "/static/media/parag-mahale.ff329c93.jpg"
+    "static/css/main.a1ce3ac5.chunk.css.map": "/static/css/main.a1ce3ac5.chunk.css.map",
+    "static/js/2.962a93dd.chunk.js.LICENSE.txt": "/static/js/2.962a93dd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/black-hole-loader.6910d6f0.png",
+    "static/media/mnm-exports-thumb.23fa9aad.png": "/static/media/mnm-exports-thumb.23fa9aad.png",
+    "static/media/mobile-bazar-thumb.d1c90818.png": "/static/media/mobile-bazar-thumb.d1c90818.png",
+    "static/media/monthly-tournament-thumb.a2640ed5.png": "/static/media/monthly-tournament-thumb.a2640ed5.png",
+    "static/media/parag_mahale_img.8ce53cc5.jpg": "/static/media/parag_mahale_img.8ce53cc5.jpg",
+    "static/media/react-landing-page-thumb.1643eb2e.png": "/static/media/react-landing-page-thumb.1643eb2e.png",
+    "static/media/react-ssr-thumb.f873a368.png": "/static/media/react-ssr-thumb.f873a368.png",
+    "static/media/rio-demo-thumb.33e806fb.png": "/static/media/rio-demo-thumb.33e806fb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.852b7b26.js",
-    "static/js/2.79c279f8.chunk.js",
-    "static/css/main.c8c8c967.chunk.css",
-    "static/js/main.97f8da82.chunk.js"
+    "static/js/runtime-main.ecdd26a4.js",
+    "static/js/2.962a93dd.chunk.js",
+    "static/css/main.a1ce3ac5.chunk.css",
+    "static/js/main.ebc4db2a.chunk.js"
   ]
 }
